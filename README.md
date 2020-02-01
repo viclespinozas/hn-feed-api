@@ -20,9 +20,8 @@ Then run devserver from project root directory:
 ```
 $ turbo devserver
 ```
-
-To build for production, run build:
+Then to first populate the DB run:
 
 ```
-$ npm run build
+$ curl -H 'Content-type: application/json' -X GET  http://localhost:3000/api/fetch
 ```
